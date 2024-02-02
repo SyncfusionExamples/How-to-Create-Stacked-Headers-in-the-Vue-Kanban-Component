@@ -1,17 +1,19 @@
 <template>
-    <ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
-        <e-columns>
-            <e-column headerText="Open" keyField="Open" allowToggle="true"></e-column>
-            <e-column headerText="In Progress" keyField="InProgress" allowToggle="true" :isExpanded="false"></e-column>
-            <e-column headerText="In Review" keyField="Review" allowToggle="true"></e-column>
-            <e-column headerText="Completed" keyField="Close" allowToggle="true"></e-column>
-        </e-columns>
-        <e-stackedHeaders>
-            <e-stackedHeader text="To Do" keyFields="Open"></e-stackedHeader>
-            <e-stackedHeader text="Development Phase" keyFields="InProgress, Review"></e-stackedHeader>
-            <e-stackedHeader text="Done" keyFields="Close"></e-stackedHeader>
-        </e-stackedHeaders>
-    </ejs-kanban>
+    <div class="kanbanStyles">
+        <ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
+            <e-columns>
+                <e-column headerText="Open" keyField="Open" allowToggle="true"></e-column>
+                <e-column headerText="In Progress" keyField="InProgress" allowToggle="true" :isExpanded="false"></e-column>
+                <e-column headerText="In Review" keyField="Review" allowToggle="true"></e-column>
+                <e-column headerText="Completed" keyField="Close" allowToggle="true"></e-column>
+            </e-columns>
+            <e-stackedHeaders>
+                <e-stackedHeader text="To Do" keyFields="Open"></e-stackedHeader>
+                <e-stackedHeader text="Development Phase" keyFields="InProgress, Review"></e-stackedHeader>
+                <e-stackedHeader text="Done" keyFields="Close"></e-stackedHeader>
+            </e-stackedHeaders>
+        </ejs-kanban>
+    </div>
 </template>
   
 <script>
@@ -466,4 +468,8 @@ export default {
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+
+.kanbanStyles{
+    height: 550px;  
+}
 </style>
