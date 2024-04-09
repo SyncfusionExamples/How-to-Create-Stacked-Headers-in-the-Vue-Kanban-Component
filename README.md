@@ -2,7 +2,7 @@
 
 A quick-start Vue project that shows how to create stacked headers in the [Vue Kanban]( https://www.syncfusion.com/vue-components/vue-kanban-board?utm_source=github&utm_medium=listing&utm_campaign=vue-kanban-templates-github-samples) component. It includes a code snippet for adding stacked headers, making columns collapsible, and setting columns to a collapsed state by default.
 
-Watch the video: Coming soon...
+Watch the video: https://www.syncfusion.com/tutorial-videos/vue/kanban-board?title=how-to-create-stacked-headers-in-the-vue-kanban-component
 
 Refer to the following documentation to learn about the Vue Kanban component’s stacked headers feature: https://ej2.syncfusion.com/vue/documentation/kanban/columns#stacked-headers 
 
